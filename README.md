@@ -2,6 +2,11 @@
 
 This repo serves as k0s update server reference implementation. It provides the basic channels descriptions that is expected from an update server.
 
+## Available channels
+
+TODO
+## Channel "protocol"
+
 Essentially k0s autopilot assumes the folowing structure for update channels:
 
 ```text
