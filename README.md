@@ -7,22 +7,22 @@ This repo serves as k0s update server reference implementation. It provides the 
 TODO
 ## Channel "protocol"
 
+
+When autopilot is configred to use a channel called `some-channel`, it will request the information from following URL `<update-server-address/<channel>/index.yaml`
 Essentially k0s autopilot assumes the folowing structure for update channels:
 
 ```text
-channels/
-    <channel-name>/
-        index.yaml
+<channel-name>/
+    index.yaml
 ```
 
 Each the channel name can contain e.g. forward slashes so you can structure the channels for example like so:
 
 ```text
-channels/
-    stable/v1.28/
-        index.yaml
-    unstable/v1.28/
-        index.yaml
+stable/v1.28/
+    index.yaml
+unstable/v1.28/
+    index.yaml
 ```
 
 Each channel `index.yaml` need to provide following information:
