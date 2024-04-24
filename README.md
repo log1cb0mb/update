@@ -4,7 +4,11 @@ This repo serves as k0s update server reference implementation. It provides the 
 
 ## Available channels
 
-TODO
+- stable
+- stable/v1.27
+- stable/v1.28
+- stable/v1.29
+
 ## Channel "protocol"
 
 
